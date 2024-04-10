@@ -1,0 +1,60 @@
+.signup-container{
+    position: absolute;
+}
+
+.sign{
+    background-color: antiquewhite;
+    
+}
+
+.main {
+    background-color: #dcc9c9;
+    box-shadow: 0px 0px 20px rgba(153, 153, 125, 0.1); 
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+.main-side{
+    background-color: antiquewhite;
+    position: relative;
+    height: 88.75vh;
+    width: 100vw;
+    overflow: hidden; 
+}
+
+.signup-img{
+    width: 100%; /* Ensure the image width covers the container */
+    height: 100%; /* Ensure the image height covers the container */
+    object-fit: cover; /* Cover the entire container with the image */
+}
+
+.sub{
+    background-color: rgb(106, 202, 202);
+    border: 2px solid bisque;
+    border-radius: 6px ;
+}
+
+.error{
+    color: red;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.names{
+    display: flex;   
+
+}
+.username{
+
+    margin-right: 55px;
+}
+.name{
+    width: 300px;
+}
+.lastname{
+    width: 300px;
+}
+

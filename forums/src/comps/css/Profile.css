@@ -1,0 +1,26 @@
+.profile{
+    display: flex;
+}
+.prof{
+    display: flex   ;
+}
+.info{
+    max-width: 40%;
+    min-height: 88.5vh;
+    width: 100%;
+    background-color: azure;
+}
+
+.details{
+    width: 100%;
+    text-align: center;
+}
+
+.pf{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin-right: 20px;
+    margin-top: 20px;
+}

@@ -1,0 +1,86 @@
+.dis{
+    background-color: rgb(250, 247, 242);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.dis-main{
+    max-width: 50%;
+    margin-left: 360px;
+}
+.dis-in-title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.dis-in-desc{
+    margin-top: 15px;
+    height: 100px;
+}
+
+.btn-dis{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgb(123, 121, 117);
+    border: 2px solid bisque;
+    width: 100px;
+   
+}
+
+.dis-top{
+    display: flex;
+}
+
+.dis-search{
+    max-width: 30%;
+    width: 30%;
+    margin-right: 0;
+}
+
+.topic{
+    margin-top: 3px;
+    text-align: left;
+    max-width: 70%;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.title-top{
+    margin-top: 20px;
+    border-radius: 20%;
+}
+
+.comments{
+    display: flex;
+    
+}
+
+.dis-prof{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.lin{
+    text-decoration: none;
+    width: 93vw;
+}
+
+.dis-head{
+    background-color: rgb(233, 224, 215);
+}
+
+.dis-name{
+    display: flex;
+}
+
+.dis-name1{
+    max-width: 100%;
+    width: 100%;
+    text-align: right;
+}
+

@@ -1,0 +1,14 @@
+.homeSearch {
+    margin-top: 15px;
+    width: 50%;
+    margin-left: 370px;
+    margin-bottom: 15px;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom-carousel {
+  max-height: 300px; /* Adjust the height as needed */
+}
