@@ -1,5 +1,6 @@
 .signup-container{
     position: absolute;
+    
 }
 
 .sign{
@@ -8,12 +9,13 @@
 }
 
 .main {
-    background-color: #dcc9c9;
-    box-shadow: 0px 0px 20px rgba(153, 153, 125, 0.1); 
+    background-color: rgba(34, 24, 61, 0); 
+    backdrop-filter: blur(8px); 
+    box-shadow: 0px 0px 10px white;   
     padding: 40px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 70%;
     transform: translate(-50%, -50%);   
 }
 
@@ -57,4 +59,12 @@
 .lastname{
     width: 300px;
 }
-
+.lastname.label {
+    color: white;
+}
+.label {
+    color: white;
+}
+.form-text {
+    color: white;
+}

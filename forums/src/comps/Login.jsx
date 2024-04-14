@@ -66,12 +66,12 @@ export default function Login() {
             onChange={(e) => setpassword(e.target.value)}
           />
         </div>
-        {error && <div>{error}</div>}
+        {error && <div className="error">{error}</div>}
         <button type="submit" className="btn btn-primary">
-          Submit
+          Log in
         </button>
       </form>
-      <img className="login-image" src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/4752/direct/1603737480214-Community%20Forum.png"></img>
+      <img className="login-image" src="https://static.vecteezy.com/system/resources/previews/007/164/537/original/fingerprint-identity-sensor-data-protection-system-podium-hologram-blue-light-and-concept-free-vector.jpg"></img>
       </div>
     </div>
   );

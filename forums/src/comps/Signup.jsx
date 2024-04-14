@@ -31,18 +31,18 @@ export default function Signup() {
     } else if (password === "") {
         seterror("Password cannot be empty");
         return;
-    } else if (password.length < 7) {
+    } 
+    else if (!/\d/.test(password) || !/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+      seterror("Password should contain at least one digit and one special character");
+      return;
+  }else if (password.length < 7) {
         seterror("Length of password cannot be less than 7");
         return;
-    }  else if (errorData && errorData.message) {
-        // Print the error message for the email field
+    } else if (errorData && errorData.message) {
         seterror(errorData.message);
         return;
     } 
-    else if (!/\d/.test(password) || !/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
-      seterror("Password should contain at least one special character");
-      return;
-  }
+    
     }
     
     else {
@@ -118,8 +118,8 @@ export default function Signup() {
           Sign Up
         </button>
       </form>
-      <img className="signup-img" src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/4752/direct/1603737480214-Community%20Forum.png"/></div>
-
+      <img className="login-image" src="https://static.vecteezy.com/system/resources/previews/007/164/537/original/fingerprint-identity-sensor-data-protection-system-podium-hologram-blue-light-and-concept-free-vector.jpg"></img>
+</div>
     </div>
   </div>
   );

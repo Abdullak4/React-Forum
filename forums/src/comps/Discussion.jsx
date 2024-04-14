@@ -97,6 +97,7 @@ export default function Discussion() {
 
   return (
     <div className="dis ">
+
       <div className="dis-head">
       <div className="dis-top">
         <h1 className="topic">Welcome to {category} forums</h1>
@@ -144,7 +145,22 @@ export default function Discussion() {
           </button>
           
         </div>
-        {nul}
+        <div className="null" style={{ color: 'red', fontWeight: 'bold' }}>
+  {nul}
+</div>
+
+{empty && (
+  <h1 style={{ color: 'blue', fontSize: '36px', marginTop: '20px' }}>
+    Start a discussion
+  </h1>
+)}
+  
+  {submitted && (
+  <h1 style={{ color: 'green', marginTop: '20px' }}>
+    {success}
+  </h1>
+)}
+
       </form>
       </div>
       <div className="questions-container" style={{ textAlign: "left" }}>
@@ -182,8 +198,7 @@ export default function Discussion() {
         ))}
         
       </div>
-      {empty && <h1>Start a discussion</h1>}
-      {submitted && <h1>{success}</h1>}
+      
     </div>
   );
 }

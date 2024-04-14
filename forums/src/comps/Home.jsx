@@ -6,15 +6,21 @@ import Cards from "./Cards";
 import './css/Home.css';
 
 const programmingLanguages = [
-  { id: 1, title: "Python", description: "A high-level programming language.", img: "python.jpeg" },
-  { id: 2, title: "C", description: "A procedural programming language.", img: "c.jpeg" },
-  { id: 3, title: "JavaScript", description: "A programming language commonly used in web development.", img: "javascript.jpeg" },
-  { id: 4, title: "Java", description: "A popular programming language known for its portability and performance.", img: "Java.jpeg" },
-  { id: 5, title: "C++", description: "An object-oriented programming language derived from C.", img: "cpp.jpg" },
-  { id: 6, title: "C#", description: "A programming language developed by Microsoft for building Windows applications.", img: "csharp.jpg" },
-  { id: 7, title: "PHP", description: "A server-side scripting language commonly used for web development.", img: "php.jpg" },
-  { id: 8, title: "Swift", description: "A programming language developed by Apple for iOS and macOS development.", img: "swift.jpg" },
-  { id: 9, title: "TypeScript", description: "A superset of JavaScript that adds static typing to the language.", img: "typescript.jpg" }
+  
+    { "id": 1, "title": "Python", "description": "Python is a high-level programming language known for its simplicity and readability. It is widely used in various domains such as web development, data science, artificial intelligence, and more.", "img": "python.jpeg" },
+    { "id": 2, "title": "C", "description": "C is a procedural programming language initially developed for system programming. It is highly efficient and widely used in developing operating systems, embedded systems, and other performance-critical software applications.", "img": "c.jpeg" },
+    { "id": 3, "title": "JavaScript", "description": "JavaScript is a versatile programming language primarily used for web development. It enables dynamic and interactive content on websites and is supported by all modern web browsers.", "img": "javascript.jpeg" },
+    { "id": 4, "title": "Java", "description": "Java is a robust and platform-independent programming language commonly used for building enterprise-scale applications. It is known for its portability, performance, and extensive ecosystem of libraries and frameworks.", "img": "Java.jpeg" },
+    { "id": 5, "title": "C++", "description": "C++ is an extension of the C programming language with added support for object-oriented programming. It is widely used in developing system software, game engines, and high-performance applications.", "img": "cpp.jpg" },
+    { "id": 6, "title": "C#", "description": "C# is a versatile programming language developed by Microsoft. It is widely used for building Windows applications, web applications, and game development using the Unity game engine.", "img": "csharp.jpg" },
+    { "id": 7, "title": "PHP", "description": "PHP is a server-side scripting language commonly used for web development. It is particularly well-suited for creating dynamic web pages and interacting with databases.", "img": "php.jpg" },
+    { "id": 8, "title": "Swift", "description": "Swift is a modern programming language developed by Apple for building iOS, macOS, watchOS, and tvOS applications. It is designed to be safe, fast, and expressive.", "img": "swift.jpg" },
+    { "id": 9, "title": "TypeScript", "description": "TypeScript is a superset of JavaScript that adds static typing to the language. It aims to enhance JavaScript development by enabling better code organization, maintainability, and scalability.", "img": "typescript.jpg" },
+    { "id": 10, "title": "Rust", "description": "Rust is a systems programming language focused on safety, performance, and concurrency. It is designed to prevent common programming errors without sacrificing efficiency.", "img": "rust.jpg" },
+    { "id": 11, "title": "Next.js", "description": "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React-based web applications. It simplifies the creation of complex React applications by providing built-in features and conventions.", "img": "next.png" },
+    { "id": 12, "title": "Ruby", "description": "Ruby is a dynamic, object-oriented programming language known for its simplicity and productivity. It is commonly used for web development, particularly with the Ruby on Rails framework.", "img": "ruby.png" }
+  
+  
 ];
 
 

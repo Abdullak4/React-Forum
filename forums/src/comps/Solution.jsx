@@ -94,7 +94,9 @@ export default function Solution() {
             Submit
           </button>
         </div>
-        {nul}
+        <div className="null" style={{ color: 'red', fontWeight: 'bold' }}>
+  {nul}
+</div>
       </form>
 
       
