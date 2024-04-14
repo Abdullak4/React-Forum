@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './css/questions.css'; // Import CSS file for styling
-
+import './css/questions.css'; 
+import Footer from "./Footer";
 const Qna = () => {
     const [posts, setPosts] = useState([]);
 
@@ -19,7 +19,7 @@ const Qna = () => {
     }, []);
 
     return (
-        <div className="questions-container">
+        <><div className="questions-container">
             <h1 className="questions-title">Tech questions</h1>
             {posts.map((post, index) => (
                 <div className="questions-post" key={index}>
@@ -33,7 +33,9 @@ const Qna = () => {
                     </div>
                 </div>
             ))}
-        </div>
+
+        </div><Footer /></>
+        
     );
 };
 

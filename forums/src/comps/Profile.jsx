@@ -48,11 +48,11 @@ export default function Profile() {
         <div className="prof">
           <div>
         
-          <button className="pf"><h3>{pro.name.charAt(0).toUpperCase()}{pro.lastname.charAt(0).toUpperCase()}</h3></button>
+          <button className="pf"><h3>{pro.name.charAt(0).toUpperCase()}{pro.lastname.charAt(0).toUpperCase()}</h3></button> 
           
          
          </div>
-         <div>
+         <div >
          <h4>User : {pro.name} {pro.lastname}</h4>
          <hr />
         <h4>Email : {pro.email}</h4>
@@ -66,25 +66,35 @@ export default function Profile() {
         ))}
       </div>
       <div className="details">
-        <h2 style={{ textAlign: 'left' }}>Questions Asked</h2>
+      <h2 style={{ textAlign: 'left', color: 'blue', fontWeight: 'bold', marginBottom: '10px' }}>Questions Asked</h2>
+
         
           {questions.map((question, index) => (
-            <div key={index}>
-              <h3>Title: {question.Title}</h3>
-              <p>Description: {question.desc}</p>
-              <p>Category: {question.category}</p>
+            <ul>
+              <div style={{ textAlign: 'left' }} key={index}>
+                <li>
+                <h3>Title: {question.Title}</h3>
+              <p><strong>Description:</strong> {question.desc}</p>
+              <p> <strong>Category:</strong>{question.category}</p>
+                </li>
+              
             </div>
+            </ul>
+            
           ))}
         
       
          <hr />
      
-        <h2 style={{ textAlign: 'left' }}>Questions Answered</h2>
+         <h2 style={{ textAlign: 'left', color: 'blue', fontWeight: 'bold', marginBottom: '10px' }}>Questions Answered</h2>
+
         
           {ans.map((solution, index) => (
-            <div key={index}>
-              <p>Description: {solution.desc}</p>
+            <ul>
+            <div style={{ textAlign: 'left' }} key={index}>
+              <li><p><strong>Description:</strong> {solution.desc}</p></li>
             </div>
+            </ul>
           ))}
         
       </div>

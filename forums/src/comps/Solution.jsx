@@ -78,14 +78,14 @@ export default function Solution() {
         <div className="dis-main">
           <div className="form-group ">
             <label htmlFor="exampleInputEmail1" className="title-top">
-              Problem Title
+              Problem Solution
             </label>
             <input
               type="text"
               className="form-control dis-in-title"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              placeholder="Problem Title"
+              placeholder="Problem Solution"
               value={desc}
               onChange={(e) => setdesc(e.target.value)}
             />
@@ -110,7 +110,7 @@ export default function Solution() {
                 )}
               </div>
               <div>
-              <h1 lassName="post-content">{sol.desc}</h1>
+              <h6 lassName="post-content">{sol.desc}</h6>
           {sol.email === email && <button onClick={()=>handleDelete(sol._id)}>Delete</button>}
           <div className="post-info">
                         <p>

@@ -25,23 +25,24 @@ export default function Signup() {
     });
     if (!response.ok) {
       const errorData = await response.json();
-      if (email === "") {
+      if (name === "" || lastname === ""){
+        seterror("Enter complete name");
+        return;
+      }
+      else if (email === "") {
         seterror("Email cannot be empty");
         return;
     } else if (password === "") {
         seterror("Password cannot be empty");
         return;
     } 
-    else if (!/\d/.test(password) || !/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
-      seterror("Password should contain at least one digit and one special character");
-      return;
-  }else if (password.length < 7) {
+    else if (password.length < 7) {
         seterror("Length of password cannot be less than 7");
         return;
     } else if (errorData && errorData.message) {
         seterror(errorData.message);
         return;
-    } 
+    }
     
     }
     
