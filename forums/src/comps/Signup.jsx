@@ -74,7 +74,7 @@ export default function Signup() {
           
           <div>
           <label htmlFor="exampleInputName" className="lastname label">
-            latname
+            lastname
           </label>
           <input
             type="text"

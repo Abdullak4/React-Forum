@@ -1,5 +1,5 @@
 .dis{
-    background-color: rgb(250, 247, 242);
+    background-color: #f2f2f2;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -36,6 +36,7 @@
     max-width: 30%;
     width: 30%;
     margin-right: 0;
+    border: 2px solid black;
 }
 
 .topic{
@@ -71,7 +72,7 @@
 }
 
 .dis-head{
-    background-color: rgb(233, 224, 215);
+    background-color: #f2f2f2;
 }
 
 .dis-name{
@@ -84,3 +85,41 @@
     text-align: right;
 }
 
+input[type="text"],
+textarea {
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 10px; 
+    font-size: 16px; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+
+input[type="text"]:hover,
+textarea:hover {
+    border-color: #aaa; 
+}
+
+
+
+
+textarea {
+    resize: vertical; 
+}
+
+input[type="text"],
+textarea {
+    background-color: #f9f9f9; 
+}
+
+
+.dis-in-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.dis-in-desc {
+    margin-top: 15px;
+    height: 100px;
+}
