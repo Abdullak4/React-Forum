@@ -11,7 +11,7 @@ export default function Signup() {
   const navigate = useNavigate()
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let response = await fetch("http://react-forum-nine.vercel.app/signup", {
+    let response = await fetch("https://react-forum-nine.vercel.app/signup", {
       method: "post",
       body: JSON.stringify({
         name,

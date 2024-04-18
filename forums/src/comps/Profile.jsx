@@ -8,7 +8,7 @@ export default function Profile() {
 
   const fetchQuestions = async () => {
     try {
-      const response = await fetch(`http://react-forum-nine.vercel.app
+      const response = await fetch(`https://react-forum-nine.vercel.app
 /details/${email}`);
       const data = await response.json();
       setQuestions(data);
@@ -20,7 +20,7 @@ export default function Profile() {
 
   const fetchAnswers = async () => {
     try {
-      let result = await fetch(`http://react-forum-nine.vercel.app/sol/${email}`);
+      let result = await fetch(`https://react-forum-nine.vercel.app/sol/${email}`);
       const data = await result.json();
       setans(data);
       console.log(data)
@@ -30,7 +30,7 @@ export default function Profile() {
   };
 
   const fetchProfile = async () => {
-      let result = await fetch(`http://react-forum-nine.vercel.app/profile/${email}`);
+      let result = await fetch(`https://react-forum-nine.vercel.app/profile/${email}`);
       result = await result.json();
       setInfo([result])
   

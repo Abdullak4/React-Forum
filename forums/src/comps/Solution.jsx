@@ -9,7 +9,7 @@ export default function Solution() {
   const [nul, setnull] = useState("");
   console.log(que)
   const question = async () =>{
-    let result = await fetch(`http://react-forum-nine.vercel.app
+    let result = await fetch(`https://react-forum-nine.vercel.app
 /solution/${id}`)
     result = await result.json()
     console.log(result)
@@ -24,7 +24,7 @@ export default function Solution() {
     }
     else{
       setnull("")
-      let response = await fetch('http://react-forum-nine.vercel.app/ans', {
+      let response = await fetch('https://react-forum-nine.vercel.app/ans', {
         method: "post",
         body: JSON.stringify({
           email,
@@ -41,7 +41,7 @@ export default function Solution() {
     }
   }
   const getAnswers = async ()=>{
-    let result = await fetch (`http://react-forum-nine.vercel.app
+    let result = await fetch (`https://react-forum-nine.vercel.app
 /ans/${id}`)
     result = await result.json()
     setans(result)
@@ -52,7 +52,7 @@ export default function Solution() {
   },[])
 
   const handleDelete = async (id )=>{
-     let result = await fetch(`http://react-forum-nine.vercel.app
+     let result = await fetch(`https://react-forum-nine.vercel.app
 /ans/${id}`,{
       method: "DELETE",
     })

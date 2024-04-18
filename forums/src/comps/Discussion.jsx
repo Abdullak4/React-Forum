@@ -18,7 +18,7 @@ export default function Discussion() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`http://react-forum-nine.vercel.app
+      const response = await fetch(`https://react-forum-nine.vercel.app
 /success/${category}`);
       const data = await response.json();
       console.log(data);
@@ -41,7 +41,7 @@ export default function Discussion() {
     }
     else{
     setnull("")
-    let result = await fetch("http://react-forum-nine.vercel.app/success", {
+    let result = await fetch("https://react-forum-nine.vercel.app/success", {
       method: "post",
       body: JSON.stringify({
         Title,
@@ -67,7 +67,7 @@ export default function Discussion() {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://react-forum-nine.vercel.app
+      const response = await fetch(`https://react-forum-nine.vercel.app
 /del/${id}`, {
         method: "DELETE",
       });
