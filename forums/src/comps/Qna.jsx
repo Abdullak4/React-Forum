@@ -6,7 +6,8 @@ const Qna = () => {
 
     const fetchPosts = async () => {
         try {
-            const result = await fetch("http://localhost:5000/blog");
+            const result = await fetch("http://react-forum-nine.vercel.app
+/blog");
             const data = await result.json();
             setPosts(data.reverse().slice(0, 10)); 
         } catch (error) {
